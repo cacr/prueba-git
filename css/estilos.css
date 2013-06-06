@@ -1,5 +1,5 @@
 body {
-	background: #177A3D;
+	background: #0A1270;
 	font-family: Georgia;
 	text-align: center;
 }
@@ -10,13 +10,17 @@ body {
 }
 
 #contenido {
-	background: #71C792;
+	background: #6A70AE;
 	box-shadow: 0 6px 20px #333;
 	line-height: 1.4;
 	min-width: 300px;
 	padding: 2em;
 	text-align: justify;
 	width: 60%;
+}
+
+#titulo {
+	color: white;
 }
 
 #menu {
