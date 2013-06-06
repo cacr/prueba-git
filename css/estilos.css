@@ -1,5 +1,5 @@
 body {
-	background: #ccc;
+	background: #177A3D;
 	font-family: Georgia;
 	text-align: center;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 #contenido {
-	background: #fff;
+	background: #71C792;
 	box-shadow: 0 6px 20px #333;
 	line-height: 1.4;
 	min-width: 300px;
