@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>Mi proyecto de tesis</title>
+    </head>
+
+    <body>
+    	<nav id="menu">
+    		<ul>
+    			<li><a href="introduccion.html">Introducción</a></li>
+    			<li><a href="marco_teorico.html">Marco teórico</a></li>
+    			<li><a href="desarrollo.html">Desarrollo</a></li>
+    			<li><a href="referencias.html">Referencias</a></li>
+    			<li><a class="prueba" href="instrucciones.html">Instrucciones</a></li>
+                <li><a class="prueba" href="pasos.html">Pasos par realizar prueba</a></li>
+    		</ul>
+    	</nav>
+    	<section id="contenido">
+    		<h1>PASOS REALIZADOS PARA DESARROLLAR LA PRUEBA GIT, POR CADA PUNTO.</h1>
+    		<cite>Por Carolina Cortés Rivera</cite>
+    		<hr>
+    		<p>Estos son los pasos que realice para ejecutar cada punto pedido en la prueba.</p>
+            <ol id = "pasos">
+                <li> Realizar Fork.
+                    > Entrar a cuenta de quien sacaré el proyecto.
+                    > Seleccionar proyecto.
+                    > Realizar Fork, dando click en el botón "Fork" perteneciente al proyecto.</li>
+                <li> Clonar en mi equipo el repositoria de mi cuenta.
+                    > Abrir Git Bash.
+                    > Ingresar mediante git bash a la carpeta donde quiero que se guarde el clon del proyecto que está en mi repositorio.
+                    > Ingresar el comando "git clone url del repositorio".
+                    > Revisar que el proyecto haya sido clonado en la carpeta de destino que elegí.
+                    > Clonación realizada.</li>
+                <li> Omitir las imagenes con extención ".jpg".
+                    > En git Bash ingresamos el comando "touch .gitignore".
+                    > Edtamos este archivo y ponemos "*.jpg" para que excluya todos los archivo .jpg del proyecto.</li>
+                <li> Realizar una página por cada Elemento.
+                    > Creamos un nuevo archivo con extención html, marco_teorico.html.
+                    > Editamos su contenido, acorde a lo solicitado o al diseño de la página original y guardamos.
+                    > Para agregar al repositorio en git bash se ingresa el comando "git add ."
+                    > Cramos el commit de este archivo con el comando "git commit -m "se agrego marco teorico".
+                    > Repetimos todos pasos para cada una de las páginas (desarrollo y referencias).</li>
+                <li> Crear una rama "diseño" con el propósito de cambiar el aspecto gráfico y guardar los cambios, con al menos 2 commits.
+                    > Creamos la rama "diseño" ingresando en git bash el siguiente comando: git branch diseño
+                    > Para cambiarnos a esa rama y realizar cambios en este y no en la original, que es la rama llamada master,
+                      ingresamos en git bash el siguiente comando: git checkout diseno
+                    > Ahora editamos el aspecto original de la página, el que sea y será guaradao en la rama diseno.
+                    > Agregamos el archivo al repositorio con los cambios ya realizados en el aspecto gráfico, con el comando
+                      git add .
+                    > Realizamos el commit de este archivo agregado, con el comando git commit -m "se cambio gráfico el fondo".
+                    > Realizamos otro cambio en la página.
+                    > Lo agregamos al repositorio con git add .
+                    > Hacemos el commit del archivo preparado con git commit -m "se realizo cambio de tamano de letra de pagina"</li>
+                <li> Mezclar los cambios en las dos ramas (Sin eliminar la rama diseño).
+                    > En git bash ingresar el comando git checkout master para cambiarse a la rama original.
+                    > Ahora mezclamos las ramas con el comando git merge diseno.
+                </li>
+                <li>Subir los cambios al repositorio y enviarme un correo con el link para acceder.</li>
+            </ol>
+            <blockquote>
+                <h3>Importante</h3>
+                <p>Crear un menú llamado "Pasos" que enlace con una página que incluya una descripción y los comandos git utilizados en cada punto.</p>
+            </blockquote>
+    		<hr>
+    		<cite>Ejemplo del uso de Git</cite>
+    	</section>
+    </body>
+</html>
